@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<title>Kamal</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://media.licdn.com/media/AAEAAQAAAAAAAAv7AAAAJGQ1YjIxZGE5LTc1ZWItNDFkMi04N2VkLWYwM2Q4MmZlZjBmYw.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 20px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    
+    }
+    
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmRAAAAJDJlN2Q2MWU1LTliZmItNDM5Yy1hNWM0LTU4ZDNiNWI1YmE1Yw.jpg">
+    <h1>All About Kamal</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Bulls Talk</a></li>
+      <li><a href="#">Contact Info</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Jimmy Butler on the Trading Block</h2>
+    <p>Apparently the Bulls are actively looking to trade Jimmy Butler. I think it's a good decision, as long as we get something good in return.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>I Finished Attack on Titan</h2>
+    <p>I finished the second season of Attack on Titan today. I read the manga so I already knew what was going to happen, but it was cool to see it animated.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>I'll be on Judge Mathis</h2>
+    <p>On Wednesday I'm going to Judge Mathis. It will be cool to see the cases and be on TV.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
+</html>
