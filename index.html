@@ -5,36 +5,43 @@
   <style>
     header {
       text-align: center;
-      background: url('https://media.licdn.com/media/AAEAAQAAAAAAAAv7AAAAJGQ1YjIxZGE5LTc1ZWItNDFkMi04N2VkLWYwM2Q4MmZlZjBmYw.jpg');
+      background: url('http://i.cdn.turner.com/nba/nba/teamsites/images/legacy/bulls/seered_130417.jpg');
       background-size: cover;
       color: white;
     }
     a {
       color: white;
+      text-align: center;
     }
     h1 {
-      font-size: 70px;
+      font-size: 25px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 25px;
+      text-align: center;
     }
     img {
-      margin: 20px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    
+/*      margin: 20px 0px 0px 0px;*/
     }
     
     ul {
       padding: 10px;
       background: rgba(0,0,0,0.5);
+      margin-bottom: 0px;
     }
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
     }
-    article {
-      max-width: 500px;
-      padding: 20px;
+    div {
       margin: 0 auto;
     }
+    .nba {width: 100%;
+    } 
     @media (max-width: 500px) {
       h1 {
         font-size: 36px;
@@ -43,39 +50,168 @@
       li {
         padding: 5px;
         display: block;
+        margin: 20px, 15px, 0, 15px;
       }
     }
-  </style>
+
+
+    .class {
+      text-align: center;
+    }
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.run {
+    position: relative;
+    display: inline-block;
+
+}
+.run-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.run-content a:hover {background-color: #f1f1f1}
+
+.run:hover .dropdown-content {
+    display: block;
+}
+
+.run:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.agents {
+    position: relative;
+    display: inline-block;
+
+}
+.agents-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.agents-content a:hover {background-color: #f1f1f1}
+
+.agents:hover .dropdown-content {
+    display: block;
+}
+
+.agents:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
 </head>
 <body>
   <header>
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmRAAAAJDJlN2Q2MWU1LTliZmItNDM5Yy1hNWM0LTU4ZDNiNWI1YmE1Yw.jpg">
-    <h1>All About Kamal</h1>
+    <!-- <h1>CHICAGO BULLS TALK</h1> -->
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Bulls Talk</a></li>
-      <li><a href="#">Contact Info</a></li>
+      <div class="dropdown">
+  <button class="dropbtn">Teams</button>
+  <div class="dropdown-content">
+    <a href="#">Atlanta Hawks</a>
+    <a href="#">Boston Celtics</a>
+    <a href="#">Brooklyn Nets</a>
+    <a href="#">Charlotte Hornets</a>
+    <a href="#">Chicago Bulls</a>
+    <a href="#">Cleveland Cavaliers</a>
+    <a href="#">Dallas Mavericks</a>
+    <a href="#">Denver Nuggets</a>
+    <a href="#">Detroit Pistons</a>
+    <a href="#">Golden State Warriors</a>
+    <a href="#">Houston Rockets</a>
+    <a href="#">Indiana Pacers</a>
+    <a href="#">LA Clippers</a>
+    <a href="#">LA Lakers</a>
+    <a href="#">Mamphis Grizzlies</a>
+    <a href="#">Miami Heat</a>
+    <a href="#">Milwaukee Bucks</a>
+    <a href="#">Minnesota Timberwolves</a>
+    <a href="#">New Orleans Pelicans</a>
+    <a href="#">New York Knicks</a>
+    <a href="#">Oklahoma City Thunder</a>
+    <a href="#">Orlando Magic</a>
+    <a href="#">Philadelphia 76ers</a>
+    <a href="#">Phoenix Suns</a>
+    <a href="#">Portland Trail Blazers</a>
+    <a href="#">Sacramento Kings</a>
+    <a href="#">San Antonio Spurs</a>
+    <a href="#">Toronto Raptors</a>
+    <a href="#">Utah Jazz</a>
+    <a href="#">Washington Wizards</a>
+  </div>
+</div>
+    <div class="run">
+  <button class="dropbtn">2017 Awards</button>
+  <div class="dropdown-content">
+    <a href="#">Most Improved Player: Russell Westbrook</a>
+    <a href="#">Defensive Player of the Year: Draymond Green</a>
+    <a href="#">Most Improved Player: Giannis Antetokounmpo</a>
+    <a href="#">Sixth Man of the Year: Eric Gordon</a>
+    <a href="#">Rookie of the Year: Malcolm Brogdon</a>
+    <a href="#">Coach of the Year: Mike D'Antoni</a>
+  </div>
+</div>
+    <div class="agents">
+  <button class="dropbtn">Top Free Agents</button>
+  <div class="dropdown-content">
+    <a href="#">Nerlens Noel — 23, Restricted</a>
+    <a href="#">Kentavious Caldwell-Pope — 24, Unrestricted</a>
+    <a href="#">Jonathon Simmons — 27, Restricted</a>
+    <a href="#">Derrick Rose — 28, Unrestricted</a>
+    <a href="#">Willie Reed — 27, Unrestricted</a>
+  </div>
+</div>
     </ul>
   </header>
-  <article>
-    <h2>Jimmy Butler on the Trading Block</h2>
-    <p>Apparently the Bulls are actively looking to trade Jimmy Butler. I think it's a good decision, as long as we get something good in return.</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>I Finished Attack on Titan</h2>
-    <p>I finished the second season of Attack on Titan today. I read the manga so I already knew what was going to happen, but it was cool to see it animated.</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>I'll be on Judge Mathis</h2>
-    <p>On Wednesday I'm going to Judge Mathis. It will be cool to see the cases and be on TV.</p>
-    <button>Like</button>
-  </article>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+<div>
+  <img src="http://eastonialeopards.com/wp-content/uploads/2017/02/2016_2017_nba_season_wallpaper_by_skdworld-dani1mj-900x506.png" class="nba">
+</div>
+          <a class="twitter-timeline" data-width="308" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/wojespn">Tweets by wojespn</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/MarcJSpearsESPN">Tweets by MarcJSpearsESPN</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/NBA">Tweets by NBA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/NBASummerLeague">Tweets by NBASummerLeague</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 </body>
+
+
 </html>
