@@ -41,7 +41,7 @@
       margin: 0 auto;
     }
     .nba {width: 100%;
-      max-height: 600px;
+      max-height: 650px;
     } 
     @media (max-width: 500px) {
       h1 {
@@ -139,13 +139,38 @@
 .agents:hover .dropbtn {
     background-color: #3e8e41;
 }
+.home {
+    position: relative;
+    display: inline-block;
 
+}
+.home-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.home-content a:hover {background-color: #f1f1f1}
+
+.home:hover .home-content {
+    display: block;
+}
+
+.home:hover .homebtn {
+    background-color: #3e8e41;
+}
 </style>
 </head>
 <body>
   <header>
     <!-- <h1>CHICAGO BULLS TALK</h1> -->
     <ul>
+    <div class="home">
+  <button class="dropbtn">Home</button>
+  <div class="dropdown-content">
+  </div>
       <div class="dropdown">
   <button class="dropbtn">Teams</button>
   <div class="dropdown-content">
@@ -202,10 +227,12 @@
     <a href="#">Willie Reed — 27, Unrestricted</a>
   </div>
 </div>
+<!-- <button onclick="location.href='index.html'" type="button">
+     Home</button> -->
     </ul>
   </header>
 <div>
-  <img src="https://s-media-cache-ak0.pinimg.com/originals/09/6c/b1/096cb1f6e1a029dfb20596a9f55e1b67.jpg" class="nba">
+  <img src="https://images7.alphacoders.com/363/363760.jpg" class="nba">
 </div>
           <a class="twitter-timeline" data-width="25%" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/wojespn">Tweets by wojespn</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           <a class="twitter-timeline" data-width="25%" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/MarcJSpearsESPN">Tweets by MarcJSpearsESPN</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
