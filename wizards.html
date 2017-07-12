@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<title>Kamal</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://i.cdn.turner.com/nba/nba/teamsites/images/legacy/bulls/seered_130417.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 25px;
+      text-align: center;
+    }
+    img {
+/*      margin: 20px 0px 0px 0px;*/
+    }
+    
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      margin-bottom: 0px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    div {
+      margin: 0 auto;
+    }
+    .nba {width: 100%;
+      max-height: 600px;
+    } 
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        margin: 20px, 15px, 0, 15px;
+      }
+    }
+
+
+    .class {
+      text-align: center;
+    }
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.run {
+    position: relative;
+    display: inline-block;
+
+}
+.run-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.run-content a:hover {background-color: #f1f1f1}
+
+.run:hover .dropdown-content {
+    display: block;
+}
+
+.run:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.agents {
+    position: relative;
+    display: inline-block;
+
+}
+.agents-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.agents-content a:hover {background-color: #f1f1f1}
+
+.agents:hover .dropdown-content {
+    display: block;
+}
+
+.agents:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+  <header>
+    <!-- <h1>CHICAGO BULLS TALK</h1> -->
+    <ul>
+      <div class="dropdown">
+  <button class="dropbtn">Teams</button>
+  <div class="dropdown-content">
+    <a href="hawks.html">Atlanta Hawks</a>
+    <a href="celtics.html">Boston Celtics</a>
+    <a href="nets.html">Brooklyn Nets</a>
+    <a href="hornets.html">Charlotte Hornets</a>
+    <a href="bulls.html">Chicago Bulls</a>
+    <a href="cavs.html">Cleveland Cavaliers</a>
+    <a href="mavs.html">Dallas Mavericks</a>
+    <a href="nuggets.html">Denver Nuggets</a>
+    <a href="pistons.html">Detroit Pistons</a>
+    <a href="gsw.html">Golden State Warriors</a>
+    <a href="rockets.html">Houston Rockets</a>
+    <a href="pacers.html">Indiana Pacers</a>
+    <a href="clippers.html">LA Clippers</a>
+    <a href="lakers.html">LA Lakers</a>
+    <a href="grizzlies.html">Mamphis Grizzlies</a>
+    <a href="heat.html">Miami Heat</a>
+    <a href="bucks.html">Milwaukee Bucks</a>
+    <a href="timberwolves.html">Minnesota Timberwolves</a>
+    <a href="pelicans.html">New Orleans Pelicans</a>
+    <a href="knicks.html">New York Knicks</a>
+    <a href="okc.html">Oklahoma City Thunder</a>
+    <a href="magic.html">Orlando Magic</a>
+    <a href="sixers.html">Philadelphia 76ers</a>
+    <a href="suns.html">Phoenix Suns</a>
+    <a href="blazers.html">Portland Trail Blazers</a>
+    <a href="kings.html">Sacramento Kings</a>
+    <a href="spurs.html">San Antonio Spurs</a>
+    <a href="raptors.html">Toronto Raptors</a>
+    <a href="jazz.html">Utah Jazz</a>
+    <a href="wizards.html">Washington Wizards</a>
+  </div>
+</div>
+    <div class="run">
+  <button class="dropbtn">2017 Awards</button>
+  <div class="dropdown-content">
+    <a href="#">Most Improved Player: Russell Westbrook</a>
+    <a href="#">Defensive Player of the Year: Draymond Green</a>
+    <a href="#">Most Improved Player: Giannis Antetokounmpo</a>
+    <a href="#">Sixth Man of the Year: Eric Gordon</a>
+    <a href="#">Rookie of the Year: Malcolm Brogdon</a>
+    <a href="#">Coach of the Year: Mike D'Antoni</a>
+  </div>
+</div>
+    <div class="agents">
+  <button class="dropbtn">Top Free Agents</button>
+  <div class="dropdown-content">
+    <a href="#">Nerlens Noel — 23, Restricted</a>
+    <a href="#">Kentavious Caldwell-Pope — 24, Unrestricted</a>
+    <a href="#">Jonathon Simmons — 27, Restricted</a>
+    <a href="#">Derrick Rose — 28, Unrestricted</a>
+    <a href="#">Willie Reed — 27, Unrestricted</a>
+  </div>
+</div>
+    </ul>
+  </header>
+<div>
+  <img src="https://wallpaperscraft.com/image/lego_bilbo_baggins_hobbit_gandalf_wizard_staff_107674_3840x2400.jpg" class="nba">
+</div>
+          <a class="twitter-timeline" data-width="308" data-height="500" href="https://twitter.com/WashWizards">Tweets by WashWizards</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" href="https://twitter.com/cmillscsn">Tweets by cmillscsn</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" href="https://twitter.com/JohnWall">Tweets by JohnWall</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="308" data-height="500" href="https://twitter.com/RealDealBeal23">Tweets by RealDealBeal23</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+
+
+</html>
